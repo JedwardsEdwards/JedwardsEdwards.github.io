@@ -1,0 +1,40 @@
+/* reset style tags for whole webpage */
+html,body {
+    margin:0;
+}
+
+body {
+	color:white;
+	font-family:monospace;
+	background-color:#474747	
+}
+
+
+h1 {
+	font-size:2.5em;
+}
+
+p {
+	font-size:1.2em;
+}
+
+.sidebar {
+	background-color: #676767;
+	width: 150px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10px;
+}
+
+.sidebar a {
+	display: block;
+	padding-bottom:5px;
+	font-size: 1.5em;
+}
+
+.main {
+	margin-left: 200px;
+	text-align: center;
+}
