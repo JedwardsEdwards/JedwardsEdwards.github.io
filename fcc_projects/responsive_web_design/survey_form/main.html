@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form Template</title>
+    <link rel="stylesheet" href="basicStyle.css" type="text/css"/>
+    <link rel="icon" href="jbaseIcon.png"/>
+  </head>
+
+  <body>
+    <header class="text-container" id="header">
+      <h1 class="text" id="title">Survey Form Template</h1>
+      <h2 class="text">-</h2>
+      <p class="text" id="description">This is a pretty template for a survey form, demonstrating a number of user input methods</p>
+    </header>
+
+    <main class="text-container">
+      <form id="survey-form" action="/submitform">
+        <div class="form-field-wrapper">
+          <label class="form-label" id="name-label" for="name">Name</label>
+          <input class="form-field" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-label" id="email-label" for="email">Email</label>
+          <input class="form-field" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-label" id="number-label" for="number">Phone Number</label>
+          <input class="form-field" id="number" type="number" placeholder="Enter your phone number" min="1" max="99999999999">
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-label" id="dropdown-label" for="dropdown">Dropdown</label>
+          <select class="form-list" id="dropdown">
+            <option value="option 1">Option 1</option>
+            <option value="option 2">Option 2</option>
+            <option value="option 3">Option 3</option>
+          </select>
+        </div>
+        <div class="form-field-wrapper">
+          <p class="form-label">Radio Options</p>
+          <label class="form-label" id="radio-label-one" for="radio-one">
+            <input class="form-list" id="radio-one" type="radio" name="radio" value="one">Option 1
+          </label>
+          <label class="form-label" id="radio-label-two" for="radio-two">
+            <input class="form-list" id="radio-two" type="radio" name="radio" value="two">Option 2
+          </label>
+          <label class="form-label" id="radio-label-three" for="radio-three">
+            <input class="form-list" id="radio-three" type="radio" name="radio" value="three">Option 3
+          </label>
+        </div>
+        <div class="form-field-wrapper">
+          <p class="form-label">Checkbox Options</p>
+          <label class="form-label" id="checkbox-label-one" for="checkbox-one">
+            <input class="form-list" id="checkbox-one" type="checkbox" name="checkbox" value="one">Option 1
+          </label>
+          <label class="form-label" id="checkbox-label-two" for="checkbox-two">
+            <input class="form-list" id="checkbox-two" type="checkbox" name="checkbox" value="two">Option 2
+          </label>
+          <label class="form-label" id="checkbox-label-three" for="checkbox-three">
+            <input class="form-list" id="checkbox-three" type="checkbox" name="checkbox" value="three">Option 3
+          </label>
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-label" id="textarea-label" for="textarea">Comments</label>
+          <textarea class="form-field" id="textarea" name="textarea"></textarea>
+        </div>
+        <div class="form-button-wrapper">
+          <button class="form-button" id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <script id="tests" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
