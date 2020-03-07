@@ -1,25 +1,24 @@
-/*
-  dark pink - #ffb6b9
-  light pink - #fae3d9
-  light blue - #bbded6
-  dark blue - #8ac6d1
-*/
+:root {
+	--color-darkpink:#ffb6b9;
+	--color-lightpink: #fae3d9;
+	--color-darkblue: #8ac6d1;
+	--color-lightblue: #bbded6;
+}
+
 body{
 	color: white;
-	text-align:center;
-	padding-top:50px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-family: "Garamond",Georgia,serif;
-	background-color: #8ac6d1
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: var(--color-darkblue);
 }
  
 .text-container {
 	border: 5px solid white;
 	border-radius: 25px;
-	width:50%;
-	margin-left:25%;
-	margin-bottom:15px;
-	padding:5px;
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 15px;
+	padding: 5px;
 }
 
 .text {

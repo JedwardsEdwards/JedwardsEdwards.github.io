@@ -1,0 +1,80 @@
+:root {
+	--color-darkpink:#ffb6b9;
+	--color-lightpink: #fae3d9;
+	--color-darkblue: #8ac6d1;
+	--color-lightblue: #bbded6;
+}
+
+body{
+	color: white;
+    text-align:center;
+	padding-top:50px;
+	font-family: "Garamond",Georgia,serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: var(--color-darkblue);
+	margin: 0;
+	padding: 0;
+}
+ 
+.text-container {
+	border: 5px solid white;
+	border-radius: 25px;
+	width:50%;
+	margin-left:25%;
+	margin-bottom:15px;
+	padding:5px;
+}
+
+.text {
+	margin: 0;
+	padding: 0;
+}
+
+code {
+	display: block;
+	padding:5px;
+	color: darkslategray;
+	background-color: var(--color-lightblue);
+	
+}
+
+#navbar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	height:100%;
+	border-right: 5px solid white;
+	border-top: 5px solid white;
+	top:0px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 2px solid white;
+	text-align: left;
+	padding-left: 10%
+}
+#nav-header {
+	font-size: 18px;
+	border-bottom: 2px solid white;
+	margin:0;
+	padding: 5px;
+}
+
+#main-doc {
+	margin-left: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+
+@media (max-width: 700px){
+	#navbar {
+		width: 150px;
+	}
+	#main-doc {
+		margin-left: 150px;
+	}
+}
