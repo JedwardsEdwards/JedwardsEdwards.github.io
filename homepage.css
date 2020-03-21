@@ -1,19 +1,142 @@
-#all-modules-wrapper {
+body {
+    font-family: var(--font-serif);
+    margin: 0;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: darkslategrey;
+    top: 0px;
+    left: 0px;
+    height: 75px;
+    width: 100%;
+}
+
+#navbar {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    height:100%;
+    margin-right:15px;
 }
 
-.fcc-module {
-    width:10%;
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height:100%;
+    transition: background-color ease-in 0.1s;
+}
+
+.nav-link:hover {
+    background-color: var(--color-lightblue);
+}
+
+.nav-link:hover > .nav-title {
+    color: darkslategray;
+}
+
+.nav-title {
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#welcome-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    color: darkslategray;
+    background-color: var(--color-lightpink);
 }
 
-.project-link {
-    text-decoration: none;
-    color:inherit;
-}
-
-.project-link:hover {
+#projects {
     background-color: var(--color-lightblue);
+    padding: 20px;
+    color: darkslategray;
+}
+
+#project-nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+    padding-bottom: 35px;
+}
+
+.link-tile {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.project-tile {
+    background-color: darkslategray;
+    padding: 5%;
+    color: White;
+}
+
+
+.project-title-highlight {
+    color: darkslategray;
+    transition: color ease-in 0.2s;
+}
+
+.project-tile:hover > * > .project-title-highlight {
+    color: var(--color-lightblue);
+}
+
+#contact-section {
+    padding: 20px;
+    background-color: var(--color-lightpink);
+    color: darkslategray;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+#contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.external-tile {
+    color: darkslategray;
+    padding: 0 5% 0 5%;
+    transition: transform ease-out 0.3s;
+}
+
+.external-tile:hover {
+    transform: translateY(8px);
+}
+
+.fa-github:before {
+    content: "\f099";
+}
+
+.fa-at:before {
+    content:"\f1fa";
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+    background-color: var(--color-lightpink);
+}
+
+footer div {
+    width: 90%;
+    border-top: 5px solid darkslategray;
 }

@@ -6,26 +6,82 @@
     <title>title_goes_here</title>
     <link rel="stylesheet" href="./common/basicStyle.css" type="text/css"/>
     <link rel="stylesheet" href="./homepage.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Bree+Serif|Cinzel|Rokkitt&display=swap" rel="stylesheet">
     <link rel="icon" href="./common/jbaseIcon.png"/>
+    <script src="https://kit.fontawesome.com/129a875bbe.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-      <h1>Joseph Edwards - Front-End Portfolio</h1>
+      <nav id="navbar">
+        <a class="nav-link" href="#welcome-section">
+          <p class="title nav-title">Home</p>
+        </a>
+        <a class="nav-link" href="#projects">
+          <p class="title nav-title">Projects</p>
+        </a>
+        <a class="nav-link" href="#contact-section">
+          <p class="title nav-title">Contact</p>
+        </a>
+      </nav>
     </header>
     <main>
-      <nav id="project-nav">
-        <h2>Select a project:</h2>
-        <div id="all-modules-wrapper">
-          <div class="module-wrapper">
-            <section class="fcc-module">
-              <a class="project-link" href="./fcc_projects/responsive_web_design/tribute_page/main.html">Tribute Page</a>
-              <a class="project-link" href="./fcc_projects/responsive_web_design/survey_form/main.html">Survery Form</a>
-              <a class="project-link" href="./fcc_projects/responsive_web_design/project_landing_page/main.html">Project Landing Page</a>
-              <a class="project-link" href="./fcc_projects/responsive_web_design/technical_documentation_page/main.html">Technical Documentation Page</a>
-            </section>
-          </div>
-        </div>
+      <section id="welcome-section">
+          <h1>Hello I am Joseph</h1>
+          <h2>Full Stack Developer in Training</h2>
+      </section>
+      <section id="projects">
+        <h2>Browse my projects so far...</h2>
+        <nav id="project-nav">
+          <a class="link-tile project-tile" href="./fcc_projects/responsive_web_design/tribute_page/main.html">
+            <p class="title project-title">
+              <span class="project-title-highlight"><</span>
+              Tribute Page
+              <span class="project-title-highlight">/></span>
+            </p>
+          </a>
+          <a class="link-tile project-tile" href="./fcc_projects/responsive_web_design/survey_form/main.html">
+            <p class="title project-title">
+              <span class="project-title-highlight"><</span>
+              Survey Form 
+              <span class="project-title-highlight">/></span>
+            </p>
+          </a>
+          <a class="link-tile project-tile" href="./fcc_projects/responsive_web_design/project_landing_page/main.html">
+            <p class="title project-title">
+              <span class="project-title-highlight"><</span>
+              Project Landing Page 
+              <span class="project-title-highlight">/></span>
+            </p>
+          </a>
+          <a class="link-tile project-tile" href="./fcc_projects/responsive_web_design/technical_documentation_page/main.html">
+            <p class="title project-title">
+              <span class="project-title-highlight"><</span>
+              Technical Documentation Page
+              <span class="project-title-highlight">/></span>
+            </p>
+          </a>
+        </nav>
+      </section>
+      <section id="contact-section">
+        <h2>Get in touch...</h2>
+        <nav id="contact-links">
+          <a class="link-tile external-tile" id="profile-link" href="https://github.com/JedwardsEdwards/JedwardsEdwards.github.io" target="_blank">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <a class="link-tile external-tile" id="mail-link" href="mailto:edwardsjoseph5@gmail.com">
+            <i class="fas fa-at"></i>
+            Email
+          </a>
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <div>
+      </div>
+    </footer>
+    <!-- <script id="tests" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 
 </html>

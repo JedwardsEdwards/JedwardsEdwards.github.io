@@ -3,12 +3,12 @@
 	--color-lightpink: #fae3d9;
 	--color-darkblue: #8ac6d1;
 	--color-lightblue: #bbded6;
+	--font-sansserif: "Lucida Sans Unicode",sans-serif;
+	--font-serif: "Bree Serif",serif;
 }
 
 body{
-	color: white;
-	font-family: "Garamond",Georgia,serif;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	 color: white;
 	background-color: var(--color-darkblue);
 }
  
