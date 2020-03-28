@@ -98,7 +98,7 @@ h1 {
 }
 
 #contact-section {
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     background-color: var(--color-lightpink);
     color: darkslategray;
     width: 100%;
