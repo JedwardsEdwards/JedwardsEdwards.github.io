@@ -1,3 +1,23 @@
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-lightblue) var(--color-darkgrey);
+  }
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: var(--color-darkgrey);
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: var(--color-lightblue);
+border: 3px solid var(--color-darkgrey);
+}
+
 body {
     font-family: var(--font-serif);
     margin: 0;
@@ -10,20 +30,38 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     position: fixed;
-    background-color: darkslategrey;
     top: 0px;
     left: 0px;
     height: 75px;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.triangle-left {
+    width: 0px;
+    height: 0px;
+    border-top:75px solid var(--color-darkgrey);
+    border-left:75px solid transparent;
+}
+
+.triangle-right {
+    width: 0px;
+    height: 0px;
+    border-top:75px solid var(--color-darkgrey);
+    border-right:75px solid transparent;
 }
 
 #navbar {
+    background-color: var(--color-darkgrey);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height:100%;
-    margin-right:15px;
+    height: 100%;
+    width: 100%;
+    padding-right: 15px;
 }
 
 .nav-link {
@@ -39,7 +77,7 @@ header {
 }
 
 .nav-link:hover > .nav-title {
-    color: darkslategray;
+    color: var(--color-darkgrey);
 }
 
 .nav-title {
@@ -57,14 +95,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     height:100vh;
-    color: darkslategray;
+    color: var(--color-darkgrey);
     background-color: var(--color-lightpink);
 }
 
 #projects {
     background-color: var(--color-lightblue);
-    padding: 20px;
-    color: darkslategray;
+    padding: 1% 2%;
+    color: var(--color-darkgrey);
+    width: 91%;
+    margin-left: 2.5%;
 }
 
 #project-nav {
@@ -82,14 +122,14 @@ h1 {
 }
 
 .project-tile {
-    background-color: darkslategray;
+    background-color: var(--color-darkgrey);
     padding: 5%;
     color: White;
 }
 
 
 .project-title-highlight {
-    color: darkslategray;
+    color: var(--color-darkgrey);
     transition: color ease-in 0.2s;
 }
 
@@ -98,11 +138,10 @@ h1 {
 }
 
 #contact-section {
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 75px 0px;
     background-color: var(--color-lightpink);
-    color: darkslategray;
+    color: var(--color-darkgrey);
     width: 100%;
-    padding-bottom: 35px;
 }
 
 #contact-links {
@@ -111,7 +150,7 @@ h1 {
 }
 
 .external-tile {
-    color: darkslategray;
+    color: var(--color-darkgrey);
     padding: 0 5% 0 5%;
     transition: transform ease-out 0.3s;
 }
@@ -132,11 +171,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75px;
+    height: 55px;
     background-color: var(--color-lightpink);
 }
 
 footer div {
-    width: 90%;
-    border-top: 5px solid darkslategray;
+    width: 95%;
+    border-top: 5px solid var(--color-darkgrey);
 }

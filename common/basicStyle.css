@@ -1,15 +1,23 @@
 :root {
+	/* old colors here */
 	--color-darkpink:#ffb6b9;
 	--color-lightpink: #fae3d9;
 	--color-darkblue: #8ac6d1;
 	--color-lightblue: #bbded6;
+	--color-darkgrey: darkslategrey;
+	/* new colors here */
+	--color-darkpink:#D7B3A4;
+	--color-lightpink: #fae3d9;
+	--color-darkblue: #BDC2C7;
+	--color-lightblue: #A1A1A1;
+	--color-darkgrey: #4D6375;
 	--font-sansserif: "Lucida Sans Unicode",sans-serif;
 	--font-serif: "Bree Serif",serif;
 }
 
 body{
-	 color: white;
-	background-color: var(--color-darkblue);
+	color: white;
+	background-color: var(--color-lightpink);
 }
  
 .text-container {
